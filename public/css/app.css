@@ -1,0 +1,155 @@
+img {
+    width: 100px;
+    height: 80px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: brown;
+    border: 0cap;
+    border-radius: 10%;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+}
+
+div {
+    background-color: rgb(248, 236, 236);
+    width: 15%;
+    height: 400px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+
+/* a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul.side-bar:hover {
+    display: flex;
+    background-color: rgb(156, 140, 140);
+    left: 100%;
+
+}
+
+.sub-menu :hover {
+    left: 250px;
+    height: 200px;
+    top: 150px;
+    background-color: orange;
+    border-radius: 5px;
+} */
+
+.container:has(>a) hover {
+    display: flex;
+    background-color: rebeccapurple;
+    padding-right: 150px;
+    right: 150px;
+    overflow: hidden;
+
+}
+
+.liste :hover {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.container: {
+
+    background-color: white;
+    height: 50%;
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    border-radius: 2%;
+}
+
+a:hover {
+    color: orange;
+}
+
+.hidenbar {
+    background-color: white;
+    height: 50%;
+    width: 30%;
+    display: none;
+}
+
+.container:has(>.item1:hover)+.bar1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar:has(>.item2:hover)+.bar1+.bar2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar:has(>.item3:hover)~.bar3 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* .container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+} */
